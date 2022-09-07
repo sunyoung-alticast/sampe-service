@@ -1,0 +1,23 @@
+server:
+    port: 30303
+
+#eureka:
+#  instance:
+#    preferIpAddress: true # 서비스 이름 대신 서비스 Ip 주소 등록 옵션
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
+
+spring:
+  application:
+    name: sample-service
+  data:
+    mongodb:
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
