@@ -18,7 +18,7 @@ class MemberHandler(val mbService: MemberService, val board: BoardServiceIn){
 
     private val logger = LoggerFactory.getLogger(this::class.java)
 
-    @LogExecution
+    // @LogExecution
     fun findAllAsync(request: ServerRequest): Mono<ServerResponse> {
         try {
             logger.info("called Async: {} ", InetAddress.getLocalHost().hostName)
@@ -34,7 +34,7 @@ class MemberHandler(val mbService: MemberService, val board: BoardServiceIn){
         }
     }
 
-    @LogExecution
+    // @LogExecution
     fun findAllSync(request: ServerRequest): Mono<ServerResponse> {
         try {
             logger.info("called findAllSync: {} ", InetAddress.getLocalHost().hostName)
@@ -51,7 +51,7 @@ class MemberHandler(val mbService: MemberService, val board: BoardServiceIn){
         }
     }
 
-    @LogExecution
+    // @LogExecution
     fun transactionTest(request: ServerRequest): Mono<ServerResponse> {
         try {
             logger.info("called hostName : ", InetAddress.getLocalHost().hostName)
@@ -67,7 +67,7 @@ class MemberHandler(val mbService: MemberService, val board: BoardServiceIn){
         }
     }
 
-    @LogExecution
+    // @LogExecution
     fun nonTransactionTest(request: ServerRequest): Mono<ServerResponse> {
         try {
             logger.info("called hostName : ", InetAddress.getLocalHost().hostName)
