@@ -15,9 +15,6 @@ import org.springframework.data.mongodb.ReactiveMongoTransactionManager
 
 @Configuration
 class TransactionAspect (private val tm: ReactiveMongoTransactionManager) {
-    //@Autowired
-    //lateinit var transactionManager: ReactiveMongoTransactionManager
-
 
     @Bean
     fun transactionAdvice(): TransactionInterceptor {

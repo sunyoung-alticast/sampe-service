@@ -2,9 +2,6 @@ package com.raidea.sampleservice.domain
 
 import org.springframework.data.mongodb.core.mapping.Document
 import java.io.Serializable
-import org.springframework.data.annotation.Id
-import org.bson.types.ObjectId
-import org.jetbrains.annotations.NotNull
 
 data class MultiLang(
     var lang: String,               //언어

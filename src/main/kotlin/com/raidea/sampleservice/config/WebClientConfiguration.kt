@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean
 @Configuration
 class WebClientConfiguration {
     @Bean
-    //@LoadBalanced
+    // @LoadBalanced
     fun loadBalancedWebClientBuilder(): WebClient.Builder {
         return WebClient.builder()
     }

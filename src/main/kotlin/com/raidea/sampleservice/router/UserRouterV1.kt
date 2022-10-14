@@ -7,7 +7,7 @@ import org.springframework.http.MediaType
 import org.springframework.stereotype.Component
 import org.springframework.web.reactive.function.server.router
 import java.net.URI
-
+import org.springframework.http.HttpLogging
 
 @Component
 class UserRouterV1 {
@@ -26,8 +26,6 @@ class UserRouterV1 {
             "sample-service/user/v1.1".nest {
                 GET("/members-async", memberHandler::findAllAsync)
                 GET("/members-sync", memberHandler::findAllSync)
-                GET("/members-tr", memberHandler::transactionTest)
-                GET("/members-nontr", memberHandler::nonTransactionTest)
             }
         }
     }

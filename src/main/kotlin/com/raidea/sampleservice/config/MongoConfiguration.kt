@@ -7,6 +7,9 @@ import org.springframework.transaction.ReactiveTransactionManager
 import org.springframework.data.mongodb.ReactiveMongoTransactionManager
 import org.springframework.data.mongodb.ReactiveMongoDatabaseFactory
 
+
+/* AOP Transaction 설정을 위한 Mongo 설정  */
+
 @Configuration
 class MongoConfiguration {
     @Bean
